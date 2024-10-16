@@ -16,6 +16,18 @@ namespace WebApi.DBOperations
                     return; // Veritabanı zaten başlatılmış
                 }
 
+                // Genre verilerini ekliyoruz
+                context.Genres.AddRange(new Genre
+                {
+                    Name = "Personal Growth",
+                }, new Genre
+                {
+                    Name = "Science Fiction",
+                }, new Genre
+                {
+                    Name = "Romance",
+                });
+
                 // Kitap verilerini ekliyoruz
                 context.Books.AddRange(
                     new Book
