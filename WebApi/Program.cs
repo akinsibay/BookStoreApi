@@ -2,6 +2,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using WebApi.DBOperations;
 using WebApi.Middlewares;
+using WebApi.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +16,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BookStoreDBContext>(options =>
     options.UseInMemoryDatabase(databaseName: "BookStoreDB")); // InMemory veritabanı ismi belirliyoruz
 
+// Add Auto Mapper
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+// Dependency Injection - Logger Service
+builder.Services.AddSingleton<ILoggerService, DBLogger>();
 
 var app = builder.Build();
 
