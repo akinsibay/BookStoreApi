@@ -90,3 +90,4 @@
 /Users/akinsibay/Desktop/Personal Dev/DotNet/BookStoreApi/WebApi/obj/Debug/net8.0/ref/WebApi.dll
 /Users/akinsibay/Desktop/Personal Dev/DotNet/BookStoreApi/WebApi/bin/Debug/net8.0/AutoMapper.dll
 /Users/akinsibay/Desktop/Personal Dev/DotNet/BookStoreApi/WebApi/obj/Debug/net8.0/WebApi.sourcelink.json
+/Users/akinsibay/Desktop/Personal Dev/DotNet/BookStoreApi/WebApi/bin/Debug/net8.0/FluentValidation.dll
