@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pMh3Ki6Fdac=",
+  "dgSpecHash": "UKlLlSPUC4g=",
   "success": true,
   "projectFilePath": "/Users/akinsibay/Desktop/Personal Dev/DotNet/BookStoreApi/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
+    "/Users/akinsibay/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/akinsibay/.nuget/packages/microsoft.aspnetcore.openapi/8.0.10/microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
     "/Users/akinsibay/.nuget/packages/microsoft.entityframeworkcore/9.0.0-rc.2.24474.1/microsoft.entityframeworkcore.9.0.0-rc.2.24474.1.nupkg.sha512",
     "/Users/akinsibay/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0-rc.2.24474.1/microsoft.entityframeworkcore.abstractions.9.0.0-rc.2.24474.1.nupkg.sha512",

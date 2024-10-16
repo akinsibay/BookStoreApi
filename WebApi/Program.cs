@@ -25,8 +25,10 @@
 
 
 
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using WebApi.DBOperations;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,6 +40,8 @@ builder.Services.AddSwaggerGen();
 // In-Memory database için DbContext yapılandırması
 builder.Services.AddDbContext<BookStoreDBContext>(options =>
     options.UseInMemoryDatabase(databaseName: "BookStoreDB")); // InMemory veritabanı ismi belirliyoruz
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 var app = builder.Build();
 
