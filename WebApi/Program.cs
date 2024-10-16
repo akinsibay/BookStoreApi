@@ -1,33 +1,7 @@
-// var builder = WebApplication.CreateBuilder(args);
-
-// // Add services to the container.
-// builder.Services.AddControllers(); // Controller'ları eklemek için bu satır gerekli
-// builder.Services.AddEndpointsApiExplorer();
-// builder.Services.AddSwaggerGen();
-
-// var app = builder.Build();
-
-// // Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
-//     app.UseSwagger();
-//     app.UseSwaggerUI();
-// }
-
-// app.UseHttpsRedirection();
-
-// app.UseAuthorization();
-
-// // Controller'ları kullanmak için MapControllers eklenmeli
-// app.MapControllers();
-
-// app.Run();
-
-
-
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using WebApi.DBOperations;
+using WebApi.Middlewares;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -62,6 +36,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+// Bizim custom middleware imiz
+app.UseCustomExceptionMiddle();
 
 // Controller'ları kullanmak için MapControllers eklenmeli
 app.MapControllers();
