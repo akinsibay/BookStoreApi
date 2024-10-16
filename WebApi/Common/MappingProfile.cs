@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using WebApi.BookOperations.GetBookDetailQuery;
 using WebApi.BookOperations.GetBooks;
 using WebApi.DBOperations;
+using WebApi.Entities;
 using static WebApi.BookOperations.CreateBook.CreateBookCommand;
 
 namespace WebApi.Common
