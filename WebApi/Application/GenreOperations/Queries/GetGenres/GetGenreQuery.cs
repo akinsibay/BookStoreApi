@@ -5,9 +5,9 @@ namespace WebApi.Application.GenreOperations.Queries.GetGenres
 {
     public class GetGenreQuery
     {
-        public readonly BookStoreDBContext _context;
+        public readonly IBookStoreDbContext _context;
         public readonly IMapper _mapper;
-        public GetGenreQuery(BookStoreDBContext context, IMapper mapper)
+        public GetGenreQuery(IBookStoreDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

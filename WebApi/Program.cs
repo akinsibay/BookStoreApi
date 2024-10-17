@@ -16,6 +16,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BookStoreDBContext>(options =>
     options.UseInMemoryDatabase(databaseName: "BookStoreDB")); // InMemory veritabanı ismi belirliyoruz
 
+builder.Services.AddScoped<IBookStoreDbContext>(provider => provider.GetService<BookStoreDBContext>());
+
 // Add Auto Mapper
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

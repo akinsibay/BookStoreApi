@@ -3,7 +3,7 @@ using WebApi.Entities;
 
 namespace WebApi.DBOperations
 {
-    public class BookStoreDBContext : DbContext
+    public class BookStoreDBContext : DbContext, IBookStoreDbContext
     {
         private Func<DbContextOptions<BookStoreDBContext>> getRequiredService;
 
@@ -19,5 +19,11 @@ namespace WebApi.DBOperations
 
         public DbSet<Book> Books { get; set; }
         public DbSet<Genre> Genres { get; set; }
+
+        // SaveChanges zaten DBContext sınıfında var, biz ekstra eklemek istediğimiz için override etmek zorundayız
+        public override int SaveChanges()
+        {
+            return base.SaveChanges();
+        }
     }
 }
