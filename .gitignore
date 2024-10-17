@@ -1,0 +1,53 @@
+# .NET Core ve ASP.NET Core
+bin/
+obj/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Visual Studio klasörleri
+.vs/
+
+# Auto-generated files
+*.log
+*.tlog
+*.cache
+*.ilk
+*.pdb
+*.exe
+*.dll
+
+# Paketler
+*.nupkg
+*.snupkg
+
+# NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Dotnet eklenenleri
+global.json
+aspnet-compiler/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# publish klasörleri
+publish/
