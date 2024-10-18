@@ -19,6 +19,7 @@ namespace WebApi.DBOperations
 
         public DbSet<Book> Books { get; set; }
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<User> Users { get; set; }
 
         // SaveChanges zaten DBContext sınıfında var, biz ekstra eklemek istediğimiz için override etmek zorundayız
         public override int SaveChanges()
